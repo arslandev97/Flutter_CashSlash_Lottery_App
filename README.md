@@ -13,11 +13,13 @@ I am Muhammad Arslan an experienced Flutter developer with over 2 years of exper
 
 # Screenshots
 
-![logo](https://github.com/arslandev97/flutter-login-ui/blob/main/images/Screenshots/01.jpg)
+![logo](https://github.com/arslandev97/Flutter_CashSlash_Lottery_App/blob/main/assets/screenshots/01.jpg)
 
-![logo](https://github.com/arslandev97/flutter-login-ui/blob/main/images/Screenshots/02.jpg)
+![logo](https://github.com/arslandev97/Flutter_CashSlash_Lottery_App/blob/main/assets/screenshots/02.jpg)
 
-![logo](https://github.com/arslandev97/flutter-login-ui/blob/main/images/Screenshots/03.jpg)
+![logo](https://github.com/arslandev97/Flutter_CashSlash_Lottery_App/blob/main/assets/screenshots/03.jpg)
+
+![logo](https://github.com/arslandev97/Flutter_CashSlash_Lottery_App/blob/main/assets/screenshots/04.jpg)
 
 # Contact Me
 
