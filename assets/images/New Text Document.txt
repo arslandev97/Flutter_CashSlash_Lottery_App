@@ -1,0 +1,443 @@
+Column(
+                  children: [
+                    Container(
+                      height: 90,
+                      width: 320,
+                      decoration: BoxDecoration(
+                        color: Color(0xff8158ed).withOpacity(0.5),
+                        borderRadius: BorderRadius.circular(10),
+                          boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey.withOpacity(0.5),
+                        spreadRadius: 2,
+                        blurRadius: 5,
+                        offset: const Offset(0, 3),
+                        ),]
+                      ),
+
+                      child: const Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Image(image: AssetImage("assets/images/02.png"), width: 74,),
+                          SizedBox(width: 20,),
+                          Text("Congratulations! You Won\nthe lottery price!", textAlign: TextAlign.center,
+                            style: TextStyle(fontFamily: "Pacisfic", ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    const SizedBox(height: 25,),
+                    const Text("Choose Your Lucky Numbers\nYou have one chance", textAlign: TextAlign.center, style: TextStyle(
+                      fontFamily: "Pacisfic",
+                      letterSpacing: 3.0,
+                      height: 1.2,
+
+                    ),),
+                    const SizedBox(height: 10,),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        LotteryButton(number: '1', onPressed: () => print('Button 1 pressed')),
+                        LotteryButton(number: '2', onPressed: () => print('Button 2 pressed')),
+                        LotteryButton(number: '3', onPressed: () => print('Button 2 pressed')),
+                        LotteryButton(number: '4', onPressed: () => print('Button 2 pressed')),
+                        // Add more buttons here
+                      ],
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        LotteryButton(number: '5', onPressed: () => print('Button 1 pressed')),
+                        LotteryButton(number: '6', onPressed: () => print('Button 2 pressed')),
+                        LotteryButton(number: '7', onPressed: () => print('Button 2 pressed')),
+                        LotteryButton(number: '8', onPressed: () => print('Button 2 pressed')),
+                        // Add more buttons here
+                      ],
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        LotteryButton(number: '9', onPressed: () => print('Button 1 pressed')),
+                        LotteryButton(number: '10', onPressed: () => print('Button 2 pressed')),
+                        LotteryButton(number: '11', onPressed: () => print('Button 2 pressed')),
+                        LotteryButton(number: '12', onPressed: () => print('Button 2 pressed')),
+                        // Add more buttons here
+                      ],
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        LotteryButton(number: '13', onPressed: () => print('Button 1 pressed')),
+                        LotteryButton(number: '14', onPressed: () => print('Button 2 pressed')),
+                        LotteryButton(number: '15', onPressed: () => print('Button 2 pressed')),
+                        LotteryButton(number: '16', onPressed: () => print('Button 2 pressed')),
+                        // Add more buttons here
+                      ],
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+
+                        LotteryButton(number: '17', onPressed: () => print('Button 1 pressed')),
+                        LotteryButton(number: '18', onPressed: () => print('Button 2 pressed')),
+                        LotteryButton(number: '19', onPressed: () => print('Button 2 pressed')),
+                        LotteryButton(number: '20', onPressed: () => print('Button 2 pressed')),
+
+                        // Add more buttons here
+                      ],
+                    ),
+                  ],
+                )
+
+
+----------------------------------------
+
+ Container(
+                height: 400,
+                width: 400,
+                child:  guessNumber == luckyNumber ? Column(
+                  children: [
+                    Container(
+                      height: 90,
+                      width: 320,
+                      decoration: BoxDecoration(
+                          color: const Color(0xff8158ed).withOpacity(0.5),
+                          borderRadius: BorderRadius.circular(10),
+                          boxShadow: [
+                            BoxShadow(
+                              color: Colors.grey.withOpacity(0.5),
+                              spreadRadius: 2,
+                              blurRadius: 5,
+                              offset: const Offset(0, 3),
+                            ),]
+                      ),
+
+                      child: const Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Image(image: AssetImage("assets/images/02.png"), width: 74,),
+                          SizedBox(width: 20,),
+                          Text("Congratulations! You Won\nthe lottery price!", textAlign: TextAlign.center,
+                            style: TextStyle(fontFamily: "Pacisfic", ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    const SizedBox(height: 25,),
+                    const Text("Choose Your Lucky Numbers\nYou have one chance", textAlign: TextAlign.center, style: TextStyle(
+                      fontFamily: "Pacisfic",
+                      letterSpacing: 3.0,
+                      height: 1.2,
+
+                    ),),
+                    const SizedBox(height: 10,),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        LotteryButton(number: '1', onPressed: (value) => {
+                          setState(() {
+                            guessNumber = int.parse(value);
+                          }),
+                        }),
+                        LotteryButton(number: '2', onPressed: (value) => {
+                          setState(() {
+                            guessNumber = int.parse(value);
+                          }),
+                        }),
+                        LotteryButton(number: '3', onPressed: (value) => {
+                          setState(() {
+                            guessNumber = int.parse(value);
+                          }),
+                        }),
+                        LotteryButton(number: '4', onPressed: (value) => {
+                          setState(() {
+                            guessNumber = int.parse(value);
+                          }),
+                        }),
+                        // Add more buttons here
+                      ],
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        LotteryButton(number: '5', onPressed: (value) => {
+                          setState(() {
+                            guessNumber = int.parse(value);
+                          }),
+                        }),
+                        LotteryButton(number: '6', onPressed: (value) => {
+                          setState(() {
+                            guessNumber = int.parse(value);
+                          }),
+                        }),
+                        LotteryButton(number: '7', onPressed: (value) => {
+                          setState(() {
+                            guessNumber = int.parse(value);
+                          }),
+                        }),
+                        LotteryButton(number: '8', onPressed: (value) => {
+                          setState(() {
+                            guessNumber = int.parse(value);
+                          }),
+                        }),
+                        // Add more buttons here
+                      ],
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        LotteryButton(number: '9', onPressed: (value) => {
+                          setState(() {
+                            guessNumber = int.parse(value);
+                          }),
+                        }),
+                        LotteryButton(number: '10', onPressed: (value) => {
+                          setState(() {
+                            guessNumber = int.parse(value);
+                          }),
+                        }),
+                        LotteryButton(number: '11', onPressed: (value) => {
+                          setState(() {
+                            guessNumber = int.parse(value);
+                          }),
+                        }),
+                        LotteryButton(number: '12', onPressed: (value) => {
+                          setState(() {
+                            guessNumber = int.parse(value);
+                          }),
+                        }),
+                        // Add more buttons here
+                      ],
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        LotteryButton(number: '13', onPressed: (value) => {
+                          setState(() {
+                            guessNumber = int.parse(value);
+                          }),
+                        }),
+                        LotteryButton(number: '14', onPressed: (value) => {
+                          setState(() {
+                            guessNumber = int.parse(value);
+                          }),
+                        }),
+                        LotteryButton(number: '15', onPressed: (value) => {
+                          setState(() {
+                            guessNumber = int.parse(value);
+                          }),
+                        }),
+                        LotteryButton(number: '16', onPressed: (value) => {
+                          setState(() {
+                            guessNumber = int.parse(value);
+                          }),
+                        }),
+                        // Add more buttons here
+                      ],
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+
+                        LotteryButton(number: '17', onPressed: (value) => {
+                          setState(() {
+                            guessNumber = int.parse(value);
+                          }),
+                        }),
+                        LotteryButton(number: '18', onPressed: (value) => {
+                          setState(() {
+                            guessNumber = int.parse(value);
+                          }),
+                        }),
+                        LotteryButton(number: '19', onPressed: (value) => {
+                          setState(() {
+                            guessNumber = int.parse(value);
+                          }),
+                        }),
+                        LotteryButton(number: '20', onPressed: (value) => {
+                          setState(() {
+                            guessNumber = int.parse(value);
+                          }),
+                        }),
+
+                        // Add more buttons here
+                      ],
+                    ),
+                  ],
+                ) : Column(
+                  children: [
+                    Container(
+                      height: 90,
+                      width: 320,
+                      decoration: BoxDecoration(
+                          color: Color(0xff8158ed).withOpacity(0.5),
+                          borderRadius: BorderRadius.circular(10),
+                          boxShadow: [
+                            BoxShadow(
+                              color: Colors.grey.withOpacity(0.5),
+                              spreadRadius: 2,
+                              blurRadius: 5,
+                              offset: const Offset(0, 3),
+                            ),]
+                      ),
+
+                      child: const Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Image(image: AssetImage("assets/images/lose.png"), width: 74,),
+                          SizedBox(width: 20,),
+                          Text("Sorry! You Lose. \nBetter luck Next Tim!", textAlign: TextAlign.center,
+                            style: TextStyle(fontFamily: "Pacisfic", ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    const SizedBox(height: 25,),
+                    const Text("Choose Your Lucky Numbers\nYou have one chance", textAlign: TextAlign.center, style: TextStyle(
+                      fontFamily: "Pacisfic",
+                      letterSpacing: 3.0,
+                      height: 1.2,
+
+                    ),),
+                    const SizedBox(height: 10,),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        LotteryButton(number: '1', onPressed: (value) => {
+                          setState(() {
+                            guessNumber = int.parse(value);
+                          }),
+                        }),
+                        LotteryButton(number: '2', onPressed: (value) => {
+                          setState(() {
+                            guessNumber = int.parse(value);
+                          }),
+                        }),
+                        LotteryButton(number: '3', onPressed: (value) => {
+                          setState(() {
+                            guessNumber = int.parse(value);
+                          }),
+                        }),
+                        LotteryButton(number: '4', onPressed: (value) => {
+                          setState(() {
+                            guessNumber = int.parse(value);
+                          }),
+                        }),
+                        // Add more buttons here
+                      ],
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        LotteryButton(number: '5', onPressed: (value) => {
+                          setState(() {
+                            guessNumber = int.parse(value);
+                          }),
+                        }),
+                        LotteryButton(number: '6', onPressed: (value) => {
+                          setState(() {
+                            guessNumber = int.parse(value);
+                          }),
+                        }),
+                        LotteryButton(number: '7', onPressed: (value) => {
+                          setState(() {
+                            guessNumber = int.parse(value);
+                          }),
+                        }),
+                        LotteryButton(number: '8', onPressed: (value) => {
+                          setState(() {
+                            guessNumber = int.parse(value);
+                          }),
+                        }),
+                        // Add more buttons here
+                      ],
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        LotteryButton(number: '9', onPressed: (value) => {
+                          setState(() {
+                            guessNumber = int.parse(value);
+                          }),
+                        }),
+                        LotteryButton(number: '10', onPressed: (value) => {
+                          setState(() {
+                            guessNumber = int.parse(value);
+                          }),
+                        }),
+                        LotteryButton(number: '11', onPressed: (value) => {
+                          setState(() {
+                            guessNumber = int.parse(value);
+                          }),
+                        }),
+                        LotteryButton(number: '12', onPressed: (value) => {
+                          setState(() {
+                            guessNumber = int.parse(value);
+                          }),
+                        }),
+                        // Add more buttons here
+                      ],
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        LotteryButton(number: '13', onPressed: (value) => {
+                          setState(() {
+                            guessNumber = int.parse(value);
+                          }),
+                        }),
+                        LotteryButton(number: '14', onPressed: (value) => {
+                          setState(() {
+                            guessNumber = int.parse(value);
+                          }),
+                        }),
+                        LotteryButton(number: '15', onPressed: (value) => {
+                          setState(() {
+                            guessNumber = int.parse(value);
+                          }),
+                        }),
+                        LotteryButton(number: '16', onPressed: (value) => {
+                          setState(() {
+                            guessNumber = int.parse(value);
+                          }),
+                        }),
+                        // Add more buttons here
+                      ],
+                    ),
+
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+
+                        LotteryButton(number: '17', onPressed: (value) => {
+                          setState(() {
+                            guessNumber = int.parse(value);
+                          }),
+                        }),
+                        LotteryButton(number: '18', onPressed: (value) => {
+                          setState(() {
+                            guessNumber = int.parse(value);
+                          }),
+                        }),
+                        LotteryButton(number: '19', onPressed: (value) => {
+                          setState(() {
+                            guessNumber = int.parse(value);
+                          }),
+                        }),
+                        LotteryButton(number: '20', onPressed: (value) => {
+                          setState(() {
+                            guessNumber = int.parse(value);
+                          }),
+                        }),
+
+                        // Add more buttons here
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+
+
